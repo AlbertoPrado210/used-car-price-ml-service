@@ -1,3 +1,32 @@
-# Raw data must be downloaded from the documented source.
-data/raw/
+# Virtual environment
+.venv/
 
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Testing and quality tools
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated data and model artifacts
+data/raw/
+data/processed/
+artifacts/
+models/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Operating system
+.DS_Store
+Thumbs.db

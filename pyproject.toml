@@ -1,0 +1,32 @@
+[project]
+name = "used-car-price-ml-service"
+version = "0.1.0"
+description = "Reproducible machine-learning service for estimating used-car asking prices"
+readme = "README.md"
+authors = [
+    { name = "Alberto Prado Agurto", email = "albertopradoagurto@gmail.com" }
+]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pandas>=3.1.0",
+    "pyarrow>=26.0.0",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+]
+
+[project.scripts]
+used-car-price-ml-service = "used_car_price_ml_service:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "jupyterlab>=4.6.4",
+    "pytest>=9.2.0",
+    "ruff>=0.17.3",
+]
